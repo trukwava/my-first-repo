@@ -1,4 +1,4 @@
-# Desktop Tutorial
+# My First Repo
 
 A tutorial repository for learning GitHub Desktop and Git workflows.
 
