@@ -109,6 +109,26 @@ body {
     animation: fadeInUp 1s ease;
 }
 
+.hero-image-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.hero-headshot:hover {
+    transform: scale(1.05);
+}
+
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
@@ -371,6 +391,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero-headshot {
+        width: 150px;
+        height: 150px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
