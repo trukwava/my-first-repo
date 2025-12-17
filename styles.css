@@ -109,6 +109,26 @@ body {
     animation: fadeInUp 1s ease;
 }
 
+.hero-image-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.hero-headshot:hover {
+    transform: scale(1.05);
+}
+
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
@@ -236,6 +256,31 @@ body {
     line-height: 1.8;
 }
 
+/* Creator Section */
+.creator-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.creator-text {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.creator-text p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.creator-text p:last-child {
+    margin-bottom: 0;
+}
+
 /* Features Grid */
 .features-grid {
     display: grid;
@@ -346,6 +391,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero-headshot {
+        width: 150px;
+        height: 150px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }

@@ -44,8 +44,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe feature cards and step items
-document.querySelectorAll('.feature-card, .step-item').forEach(el => {
+// Observe feature cards, step items, and creator content
+document.querySelectorAll('.feature-card, .step-item, .creator-text').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
